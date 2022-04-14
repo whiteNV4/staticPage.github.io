@@ -7,17 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>card</title>
     <style>
+        body {
+            background: url(./card1.jpg) no-repeat;
+        }
+
         div {
-            display: flex;
-            flex: 1;
+            /* color: #5c9135;
+             */
+            width: 700px;
+            height: 100px;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 80px;
+            position: absolute;
+            text-indent: 2;
+            left: 248px;
+            top: 782px;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <img src="./card.jpg" alt="">
     </div>
+    <script>
+        var myDate = new Date();
+        var date = myDate.toLocaleString().replace(/\//g, "-");
+        document.querySelector('div').innerHTML = date
+    </script>
 </body>
 
 </html>
